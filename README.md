@@ -2,7 +2,8 @@
 
 Custom nodes for ComfyUI to generate empty latent space compatible with Hunyuan models for both image and video generation.
 
-![nodes](https://github.com/user-attachments/assets/0b17e59c-69cf-4234-9a62-9f1647ac35db)
+![nodes](https://github.com/user-attachments/assets/6af9ce1a-86a0-4f22-a33a-8176591243ca)
+
 
 For video
 ![video](https://github.com/user-attachments/assets/c98fef05-24f6-4388-b648-5c25cd91caef)
@@ -86,6 +87,10 @@ Both nodes output a latent dictionary with the key "samples" containing a torch 
 - ComfyUI
 - PyTorch
 - Hunyuan model dependencies
+
+## Latest Hunyuan models from HuggingFace
+
+https://huggingface.co/Comfy-Org/HunyuanVideo_repackaged/tree/main/split_files/text_encoders
 
 ## License
 
