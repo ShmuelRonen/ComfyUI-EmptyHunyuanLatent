@@ -124,9 +124,9 @@ class EmptyHunyuanLatentForVideo:
             "1728x576 (3:1)"
         ]
         
-        return {"required": {
+        return {"required": { 
             "resolution": (aspect_ratios, ),
-            "frames": ("INT", {"default": 16, "min": 1, "max": 256}),
+            "length": ("INT", {"default": 25, "min": 1, "max": nodes.MAX_RESOLUTION, "step": 4}),
             "batch_size": ("INT", {"default": 1, "min": 1, "max": 4096})
         }}
     
@@ -134,7 +134,7 @@ class EmptyHunyuanLatentForVideo:
     FUNCTION = "generate"
     CATEGORY = "latent/video"
 
-    def generate(self, resolution, frames=16, batch_size=1):
+    def generate(self, resolution, length, batch_size=1):
         # Parse resolution string to get dimensions
         dimensions = resolution.split(' ')[0]
         width, height = map(int, dimensions.split('x'))
@@ -143,9 +143,8 @@ class EmptyHunyuanLatentForVideo:
         width = (width // 16) * 16
         height = (height // 16) * 16
         
-        # Create 5D latent with specified number of frames
-        # Shape: [batch_size, channels, frames, height//8, width//8]
-        latent = torch.zeros([batch_size, 4, frames, height // 8, width // 8], 
+        # Create latent with original format
+        latent = torch.zeros([batch_size, 16, ((length - 1) // 4) + 1, height // 8, width // 8], 
                            device=comfy.model_management.intermediate_device())
         return ({"samples": latent}, )
 
