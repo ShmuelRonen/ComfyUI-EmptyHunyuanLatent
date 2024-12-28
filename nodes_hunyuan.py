@@ -2,11 +2,18 @@ import nodes
 import torch
 import comfy.model_management
 
-class EmptyHunyuanLatentImage:
+class EmptyHunyuanLatentForImage:
     @classmethod
     def INPUT_TYPES(s):
         # Define aspect ratios with human-readable format
         aspect_ratios = [
+            "256x256 (1:1)",
+            "256x384 (2:3)",
+            "384x256 (3:2)",
+            "320x448 (5:7)",
+            "448x320 (7:5)",
+            "384x512 (3:4)",
+            "512x384 (4:3)",
             "512x512 (1:1)",
             "512x768 (2:3)",
             "768x512 (3:2)",
@@ -73,6 +80,13 @@ class EmptyHunyuanLatentForVideo:
     def INPUT_TYPES(s):
         # Define aspect ratios with human-readable format
         aspect_ratios = [
+            "256x256 (1:1)",
+            "256x384 (2:3)",
+            "384x256 (3:2)",
+            "320x448 (5:7)",
+            "448x320 (7:5)",
+            "384x512 (3:4)",
+            "512x384 (4:3)",
             "512x512 (1:1)",
             "512x768 (2:3)",
             "768x512 (3:2)",
