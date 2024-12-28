@@ -1,6 +1,14 @@
 # ComfyUI Hunyuan Latent Nodes
 
 Custom nodes for ComfyUI to generate empty latent space compatible with Hunyuan models for both image and video generation.
+![nodes](https://github.com/user-attachments/assets/0b17e59c-69cf-4234-9a62-9f1647ac35db)
+
+For video
+![video](https://github.com/user-attachments/assets/c98fef05-24f6-4388-b648-5c25cd91caef)
+
+For Images
+![image](https://github.com/user-attachments/assets/b7c244f2-0d31-4814-9c41-f950219251d8)
+
 
 ## Features
 
