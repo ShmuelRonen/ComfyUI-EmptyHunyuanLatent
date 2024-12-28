@@ -92,6 +92,10 @@ Both nodes output a latent dictionary with the key "samples" containing a torch 
 
 https://huggingface.co/Comfy-Org/HunyuanVideo_repackaged/tree/main/split_files/text_encoders
 
+### I recomended this hunyuan_video_720_cfgdistill_fp8_e4m3fn model for fast operation:
+
+https://drive.google.com/file/d/1BvGHjR4Mb60ZPx9tqzA1AabAwZc47ctx/view?usp=sharing
+
 ## License
 
 MIT
