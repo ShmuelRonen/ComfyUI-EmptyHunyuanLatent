@@ -50,17 +50,20 @@ The nodes support various standard resolutions with their aspect ratios:
 
 ## Installation
 
-1. Create a custom_nodes directory in ComfyUI if it doesn't exist
+Install from ComfyUI Manager
+
+or
+
 ```bash
 cd ComfyUI/custom_nodes
 ```
 
-2. Clone this repository:
+Clone this repository:
 ```bash
 git clone https://github.com/ShmuelRonen/ComfyUI-Hunyuan-Latent.git
 ```
 
-3. Restart ComfyUI
+Restart ComfyUI
 
 The nodes will appear in the node menu under:
 - `latent` for EmptyHunyuanLatentForImage
