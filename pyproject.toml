@@ -1,0 +1,14 @@
+[project]
+name = "emptyhunyuanlatent"
+description = "Custom nodes for ComfyUI to generate empty latent space compatible with Hunyuan models for both image and video generation."
+version = "1.0.0"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/ShmuelRonen/ComfyUI-EmptyHunyuanLatent"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-EmptyHunyuanLatent"
+Icon = ""
